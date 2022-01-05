@@ -6,11 +6,11 @@ root.title("Simple Calculator")
 
 '''
 "Easy"
-implement backspace ===== Completed!!!
+implement backspace =====                                       Completed!!!
     - the opposite of putting the numbers in?
-implement point or decimal button 
-    - just use the regular number buttons to make this happen. Completed
-    - switch from int() to decimal or float
+implement point or decimal button                               Completed
+    - just use the regular number buttons to make this happen.  Completed
+    - switch from int() to decimal or float.                    Completed
 implement exponent x²
     - make the x² and put it on the button
     - just use f_num times itself 
@@ -104,18 +104,18 @@ def button_calculate():
         second_number = e.get()
 
         if math == "addition":
-            f_num = f_num + int(second_number)
+            f_num = f_num + float(second_number)
 
         if math == "subtraction":
-            f_num = f_num - int(second_number)
+            f_num = f_num - float(second_number)
 
         if math == "multiplication":
-            f_num = f_num * int(second_number)
+            f_num = f_num * float(second_number)
 
         if math == "division":
-            f_num = f_num // int(second_number)
+            f_num = f_num // float(second_number)
     else:
-        f_num = int(e.get())
+        f_num = float(e.get())
     e.delete(0, END)
 
 # puts the buttons numbers on the display on the farthest right
